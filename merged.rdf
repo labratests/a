@@ -78,6 +78,9 @@
     </rdfs:subClassOf>
     <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#ResearchInstitute"/>
   </owl:Class>
+  <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ResearchMethod">
+    <rdfs:label xml:lang="en">Research method</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ProjectBudget">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#Budget"/>
@@ -99,6 +102,7 @@
       <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#AcademicPublication"/>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Any kind of thesis (bachelor's, master's, PhD) produced to receive some sort of university degree.</rdfs:comment>
+    <rdfs:label xml:lang="en">Thesis</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#PeerReviewedArticle">
     <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000102"/>
@@ -218,6 +222,7 @@
     <rdfs:label xml:lang="ca">Personal docent i investigador</rdfs:label>
     <rdfs:label xml:lang="fr">Personnel enseignant et chercheur</rdfs:label>
     <rdfs:label xml:lang="pt">Pessoal docente e investigador</rdfs:label>
+    <rdfs:label xml:lang="en">Teaching and research personnel</rdfs:label>
     <rdfs:label xml:lang="es">personal docente e investigador</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio/modules#GeopoliticalEntities">
@@ -263,11 +268,15 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:label xml:lang="pt">Projeto nacional</rdfs:label>
     <rdfs:label xml:lang="es">Proyecto regional</rdfs:label>
   </owl:Class>
+  <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ResearchProblem">
+    <rdfs:label xml:lang="en">Research problem</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ResearchPersonnel">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#HumanResource"/>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Personnel devoted to reasearching tasks.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Research personnel</rdfs:comment>
     <rdfs:label xml:lang="ca">Personal investigador</rdfs:label>
     <rdfs:label xml:lang="es">Personal investigador</rdfs:label>
     <rdfs:label xml:lang="fr">Personnel rechercheur</rdfs:label>
@@ -327,6 +336,9 @@ In the Asio project the proof of concept is carried out with the whole administr
     <owl:equivalentClass rdf:resource="http://purl.org/net/nknouf/ns/bibtex#Article"/>
     <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Article"/>
     <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ResearchContribution">
+    <rdfs:label xml:lang="en">Research contribution</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#Funding">
     <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/Funding"/>
@@ -389,6 +401,7 @@ In the Asio project the proof of concept is carried out with the whole administr
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#SpainUniversityStaffing">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:comment xml:lang="en">This ASIO vertical module defines Spain's University staffing model encompassing all its specificities.</rdfs:comment>
+    <rdfs:label xml:lang="en">Spain's university staffing</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#RegionalProject">
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
@@ -552,6 +565,9 @@ In the Asio project the proof of concept is carried out with the whole administr
   <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
   </owl:Class>
+  <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ResearchResult">
+    <rdfs:label xml:lang="en">Research result</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#GraduateStudent">
     <rdfs:subClassOf rdf:resource="http://www.asio.es/asioontologies/asio#Student"/>
     <rdfs:label xml:lang="en">Graduate student</rdfs:label>
@@ -589,6 +605,10 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:label xml:lang="es">Personal técnico</rdfs:label>
     <rdfs:label xml:lang="fr">Personnel technique</rdfs:label>
     <rdfs:label xml:lang="pt">Pessoal técnico</rdfs:label>
+    <rdfs:label xml:lang="en">Technical personnel</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#ResearchMaterial">
+    <rdfs:label xml:lang="en">Research material</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#BachelorsThesis">
     <owl:disjointWith rdf:resource="http://www.asio.es/asioontologies/asio#MastersThesis"/>
@@ -709,6 +729,10 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:comment xml:lang="en">A property to indicate that a place is the official seat of government in a political entity.</rdfs:comment>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#employs">
+    <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
+    <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchMethod"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#codeOf">
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasCode"/>
@@ -716,6 +740,10 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:comment xml:lang="en">A code is assigned to a concept.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#yields">
+    <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
+    <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchResult"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#isFundedBy">
     <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/isFundedBy"/>
@@ -731,6 +759,10 @@ In the Asio project the proof of concept is carried out with the whole administr
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasScientificDomain"/>
+  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#utilizes">
+    <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
+    <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchMaterial"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#advises">
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#isAdvisedBy"/>

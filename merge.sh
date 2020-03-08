@@ -1,0 +1,1 @@
+rdfcat -ttl asio-demo.ttl asio-mappings.ttl > merged.rdf
