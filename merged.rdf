@@ -55,6 +55,8 @@
     xmlns:pc="http://purl.org/procurement/public-contracts#">
   <owl:Ontology rdf:about="http://www.asio.es/asioontologies/asio">
     <owl:versionIRI rdf:resource="http://www.asio.es/asioontologies/asio/0.0.1"/>
+    <rdfs:label>ASIO core ontology</rdfs:label>
+    <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
   </owl:Ontology>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#EmploymentContract">
     <rdfs:subClassOf>
@@ -291,7 +293,7 @@ In the Asio project the proof of concept is carried out with the whole administr
       <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#HumanResource"/>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Personnel devoted to reasearching tasks.</rdfs:comment>
-    <rdfs:comment xml:lang="en">Research personnel</rdfs:comment>
+    <rdfs:label xml:lang="en">Research Personnel</rdfs:label>
     <rdfs:label xml:lang="ca-ad">Personal de recerca</rdfs:label>
     <rdfs:label xml:lang="ca-es">Personal investigador</rdfs:label>
     <rdfs:label xml:lang="es">Personal investigador</rdfs:label>
@@ -407,6 +409,7 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
     </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Funding organization</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project">
     <owl:equivalentClass rdf:resource="http://www.w3.org/ns/org#Project"/>
@@ -579,6 +582,7 @@ In the Asio project the proof of concept is carried out with the whole administr
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#AcademicPublication">
     <rdfs:subClassOf rdf:resource="http://www.asio.es/asioontologies/asio#Publication"/>
+    <rdfs:label xml:lang="en">Academic publication</rdfs:label>
     <rdfs:label xml:lang="ca-ad">Publicació acadèmica</rdfs:label>
     <rdfs:label xml:lang="ca-es">Publicació acadèmica</rdfs:label>
     <rdfs:label xml:lang="es">Publicación académica</rdfs:label>
@@ -611,8 +615,8 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:label xml:lang="es">Patente</rdfs:label>
     <rdfs:label xml:lang="pt">Patente</rdfs:label>
     <owl:equivalentClass rdf:resource="http://purl.org/cerif/Patent"/>
-    <rdfs:label xml:lang="ca">Patent</rdfs:label>
     <rdfs:label xml:lang="en">Patent</rdfs:label>
+    <rdfs:label xml:lang="ca">Patent</rdfs:label>
     <owl:equivalentClass rdf:resource="http://www.ontotext.com/proton/protonext#Patent"/>
     <rdfs:label xml:lang="fr">Patent</rdfs:label>
     <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Patent"/>
@@ -737,24 +741,32 @@ In the Asio project the proof of concept is carried out with the whole administr
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#participant">
     <owl:equivalentProperty rdf:resource="http://purl.org/vocab/bio/0.1/participantparticipant"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label xml:lang="en">participant</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#requiredFor">
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#AcademicPublication"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#AcademicDegree"/>
+    <rdfs:label xml:lang="en">requiredFor</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasResearchField">
     <owl:equivalentProperty rdf:resource="http://orkg.org/core#hasResearchField"/>
+    <rdfs:label xml:lang="en">has research field</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasTRL"/>
+  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasTRL">
+    <rdfs:label xml:lang="en">has TRL</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#capital">
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:comment xml:lang="en">A property to indicate that a place is the official seat of government in a political entity.</rdfs:comment>
+    <rdfs:label xml:lang="en">capital</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#employs">
     <owl:equivalentProperty rdf:resource="http://orkg.org/core#employs"/>
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchMethod"/>
+    <rdfs:label xml:lang="en">employs</rdfs:label>
+    <rdfs:label xml:lang="es">emplea</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#codeOf">
     <owl:inverseOf>
@@ -762,64 +774,83 @@ In the Asio project the proof of concept is carried out with the whole administr
     </owl:inverseOf>
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">code of</rdfs:label>
     <rdfs:comment xml:lang="en">A code is assigned to a concept.</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#yields">
     <owl:equivalentProperty rdf:resource="http://orkg.org/core#yields"/>
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchResult"/>
+    <rdfs:label xml:lang="en">yields</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#isFundedBy">
     <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/isFundedBy"/>
+    <rdfs:label xml:lang="en">is funded by</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#requires">
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#AcademicDegree"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#AcademicPublication"/>
+    <rdfs:label xml:lang="en">requires</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
-  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasScientificDomain"/>
+  <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member">
+    <rdfs:label xml:lang="en">member</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasScientificDomain">
+    <rdfs:label xml:lang="en">has scientific domain</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasCode">
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:comment xml:lang="en">A concept can be asigned a code.</rdfs:comment>
+    <rdfs:label xml:lang="en">has Code</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#spinsOffFrom">
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#Spinoff"/>
+    <rdfs:label xml:lang="en">spin of from</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasSealOfQuality">
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchInstitute"/>
+    <rdfs:label xml:lang="en">has seal of quality</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasCV">
     <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/hasCurriculumVitae"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#CV"/>
+    <rdfs:label xml:lang="en">has CV</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#funds">
     <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/funds"/>
     <owl:inverseOf rdf:resource="http://www.asio.es/asioontologies/asio#isFundedBy"/>
+    <rdfs:label xml:lang="en">funds</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#geo-division">
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio/modules#GeopoliticalEntities"/>
     <rdfs:comment xml:lang="en">A property to link a resource to a predefined geographical (or geopolitical) division.</rdfs:comment>
+    <rdfs:label xml:lang="en">geo-division</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#country">
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#Country"/>
+    <rdfs:label xml:lang="en">country</rdfs:label>
+    <rdfs:label xml:lang="es">país</rdfs:label>
     <rdfs:comment xml:lang="en">This property indicates the nationality of a resource.</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#addresses">
     <owl:equivalentProperty rdf:resource="http://orkg.org/core#addresses"/>
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchProblem"/>
+    <rdfs:label xml:lang="en">addresses</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasResearchContribution">
     <owl:equivalentProperty rdf:resource="http://orkg.org/core#hasResearchContribution"/>
+    <rdfs:label xml:lang="en">has research contribution</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#utilizes">
     <owl:equivalentProperty rdf:resource="http://orkg.org/core#utilizes"/>
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#ResearchContribution"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchMaterial"/>
+    <rdfs:label xml:lang="en">utilizes</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#advises">
     <owl:inverseOf>
@@ -827,26 +858,39 @@ In the Asio project the proof of concept is carried out with the whole administr
     </owl:inverseOf>
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#Research&amp;TeachingPersonnel"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#Student"/>
+    <rdfs:label xml:lang="en">advises</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#researchesIn">
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio/modules#ScientificDomain"/>
+    <rdfs:label xml:lang="en">researches in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#isAdvisedBy">
+    <rdfs:label xml:lang="en">is advised by</rdfs:label>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="http://www.asio.es/asioontologies/asio#projectEndDate">
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
     <rdfs:comment xml:lang="en">The end date of the project.</rdfs:comment>
+    <rdfs:label xml:lang="en">project end date</rdfs:label>
+    <rdfs:label xml:lang="es">fecha final proyecto</rdfs:label>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.asio.es/asioontologies/asio#projectObjective">
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
     <rdfs:comment xml:lang="en">A defined objective of the project.</rdfs:comment>
+    <rdfs:label xml:lang="en">project objective</rdfs:label>
+    <rdfs:label xml:lang="es">objetivo de proyecto</rdfs:label>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.asio.es/asioontologies/asio#projectStartDate">
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
     <rdfs:comment xml:lang="en">The start date of the project.</rdfs:comment>
+    <rdfs:label xml:lang="en">project start date</rdfs:label>
+    <rdfs:label xml:lang="es">fecha inicio proyecto</rdfs:label>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.asio.es/asioontologies/asio#projectKeyword">
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
     <rdfs:comment xml:lang="en">A key word of the project.</rdfs:comment>
+    <rdfs:label xml:lang="en">project keyword</rdfs:label>
+    <rdfs:label xml:lang="es">palabra clave</rdfs:label>
   </owl:DatatypeProperty>
   <rdf:Description rdf:about="http://www.asio.es/asioontologies/asio#member">
     <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/member"/>
