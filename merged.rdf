@@ -3,6 +3,7 @@
     xmlns:acm="http://acm.rkbexplorer.com/ontologies/acm#"
     xmlns:npg="http://ns.nature.com/terms/"
     xmlns:poder="http://dev.poderopedia.com/vocab/"
+    xmlns:bio="http://purl.org/vocab/bio/0.1/"
     xmlns:dbo="http://dbpedia.org/ontology/"
     xmlns:pext="http://www.ontotext.com/proton/protonext#"
     xmlns:modules="http://www.asio.es/asioontologies/asio/modules"
@@ -15,7 +16,7 @@
     xmlns:bbccore="http://www.bbc.co.uk/ontologies/coreconcepts/"
     xmlns:orkg="http://orkg.org/core#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore"
+    xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
     xmlns:time="http://www.w3.org/2006/time#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:bibo="http://purl.org/ontology/bibo/"
@@ -45,7 +46,6 @@
     xmlns:ro="http://purl.org/wf4ever/ro#"
     xmlns:aiiso="http://purl.org/vocab/aiiso/schema#"
     xmlns:dct="http://purl.org/dc/dcmitype/"
-    xmlns:bio="http://purl.org/vocab/bio/0.1/participant"
     xmlns:doco="http://purl.org/spar/doco/"
     xmlns:bf="http://id.loc.gov/ontologies/bibframe/Publication"
     xmlns:pso="http://purl.org/spar/pso/"
@@ -390,8 +390,10 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#GraduateStudent"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">PhD candidate</rdfs:label>
     <rdfs:label xml:lang="en">PhD student</rdfs:label>
+    <rdfs:label xml:lang="es">Estudiante de doctorado</rdfs:label>
+    <skos:prefLabel xml:lang="en">PhD student</skos:prefLabel>
+    <skos:altLabel xml:lang="en">PhD candidate</skos:altLabel>
   </owl:Class>
   <owl:Class rdf:about="http://www.asio.es/asioontologies/asio#Country">
     <rdfs:subClassOf rdf:resource="http://www.asio.es/asioontologies/asio/modules#GeopoliticalEntities"/>
@@ -502,11 +504,11 @@ In the Asio project the proof of concept is carried out with the whole administr
     <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000012"/>
     <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Organization"/>
     <owl:equivalentClass rdf:resource="http://usefulinc.com/ns/doap#Organization"/>
+    <owl:equivalentClass rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Organisation"/>
     <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Organization"/>
     <owl:equivalentClass rdf:resource="http://ns.nature.com/terms/Organization"/>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization"/>
-    <owl:equivalentClass rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucoreOrganisation"/>
     <owl:equivalentClass rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/ns/org#Organization"/>
     <owl:equivalentClass rdf:resource="http://purl.org/vocab/aiiso/schema#Organization"/>
@@ -739,7 +741,7 @@ In the Asio project the proof of concept is carried out with the whole administr
     <rdfs:label xml:lang="en">Edited publication</rdfs:label>
   </owl:Class>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#participant">
-    <owl:equivalentProperty rdf:resource="http://purl.org/vocab/bio/0.1/participantparticipant"/>
+    <owl:equivalentProperty rdf:resource="http://purl.org/vocab/bio/0.1/participant"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <rdfs:label xml:lang="en">participant</rdfs:label>
   </owl:ObjectProperty>
