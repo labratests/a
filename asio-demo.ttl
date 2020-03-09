@@ -178,7 +178,7 @@ asio:researchesIn rdf:type owl:ObjectProperty ;
 ###  http://www.asio.es/asioontologies/asio#spinsOffFrom
 asio:spinsOffFrom rdf:type owl:ObjectProperty ;
                   rdfs:domain asio:Spinoff ;
-                  rdfs:label "spin of from"@en .
+                  rdfs:label "spins of from"@en .
 
 
 ###  http://www.asio.es/asioontologies/asio#utilizes

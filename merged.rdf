@@ -806,7 +806,7 @@ In the Asio project the proof of concept is carried out with the whole administr
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#spinsOffFrom">
     <rdfs:domain rdf:resource="http://www.asio.es/asioontologies/asio#Spinoff"/>
-    <rdfs:label xml:lang="en">spin of from</rdfs:label>
+    <rdfs:label xml:lang="en">spins of from</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.asio.es/asioontologies/asio#hasSealOfQuality">
     <rdfs:range rdf:resource="http://www.asio.es/asioontologies/asio#ResearchInstitute"/>
